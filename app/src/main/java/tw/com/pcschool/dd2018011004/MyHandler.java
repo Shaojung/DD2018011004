@@ -51,8 +51,12 @@ public class MyHandler extends DefaultHandler {
         if (qName.equals("link"))
         {
             isLink = false;
-            links.add(linkSB.toString());
-            linkSB = new StringBuilder();
+            if (isItem)
+            {
+                links.add(linkSB.toString());
+                linkSB = new StringBuilder();
+            }
+
         }
     }
 
