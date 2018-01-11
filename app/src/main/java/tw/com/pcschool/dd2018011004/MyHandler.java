@@ -32,7 +32,7 @@ public class MyHandler extends DefaultHandler {
             case "item":
                 isItem = true;
                 item = new Mobile01NewsItem();
-                break;
+            break;
             case "link":
                 isLink = true;
                 break;
