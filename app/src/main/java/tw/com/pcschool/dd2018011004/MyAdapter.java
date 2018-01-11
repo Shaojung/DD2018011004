@@ -1,6 +1,7 @@
 package tw.com.pcschool.dd2018011004;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,6 +58,7 @@ public class MyAdapter extends BaseAdapter {
         {
             viewHolder = (ViewHolder) view.getTag();
         }
+        Log.d("NET", "title:" + mylist.get(i).title + ", img:" + mylist.get(i).imgurl);
         viewHolder.tv1.setText(mylist.get(i).title);
         viewHolder.tv2.setText(mylist.get(i).description);
         Picasso.with(context).load(mylist.get(i).imgurl).into(viewHolder.img);
